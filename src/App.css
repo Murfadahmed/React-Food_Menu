@@ -1,38 +1,119 @@
 .App {
   text-align: center;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  color: gainsboro;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar h1{
+  font-size: 3rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer{
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: transparent;
+  color: gainsboro;
+  padding: 10px;
+  position: relative;
+  bottom: 1px;
+  inset-inline-end: 0px;
+  inset-inline-start: 0px;
+}
+.footer h1{
+  border-bottom: 3px solid white;
+}
+.footer p{
+  color: black;
+  text-transform: capitalize;
+}
+.footerBtn{
+  padding: 10px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.footerBtn:hover{
+  background-color: black;
+  color: white;
+}
+.heading{
+ border-bottom: 3px solid;
+  width: 10%;
+  margin: auto;
+  transition: all ease-out 0.5s;
+}
+.heading:hover{
+  border-bottom: 3px dashed;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menuDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+.input input{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+   margin: auto;
+   font-size: 17px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.allProducts{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+
+
+}
+.main:nth-child(odd){
+  background-color: lightgoldenrodyellow;
+  
+}
+.picture {
+   height: 20rem;
+   width: 20rem;
+   padding: 1.2rem;
+   transition: all 2s linear;
+   border-radius: 2.1rem;
+}
+.picture:hover{
+   transform: translatex(1.2rem);
+   transition: all 2s linear;
+}
+.singleItem{
+  display: flex;
+}
+.textArea{
+  margin-left: 20px;
+  margin-right:20px ;
+}
+.upperText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main{
+  margin: 3rem 0;
+  border-radius: 10px; 
 }
